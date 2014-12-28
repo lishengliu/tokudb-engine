@@ -353,6 +353,7 @@ typedef struct st_tokudb_trx_data {
     uint tokudb_lock_count;
     tokudb_stmt_progress stmt_progress;
     bool checkpoint_lock_taken;
+    bool is_commit_ordered;
     LIST *handlers;
 } tokudb_trx_data;
 
